@@ -43,7 +43,7 @@ Update-Package Microsoft.AspNet.MVC -Version 5.0.0.
 | 安全 | 限制升级到使用相同的主要和次要版本与当前安装的包的唯一版本。 |
 | 源 | 要搜索的包源 URL 或文件夹路径。 本地文件夹路径可以是绝对的或相对于当前文件夹。 如果省略，`Update-Package`搜索当前所选的包源。 |
 | IncludePrerelease | 包括预发行包的更新。 |
-| 重新安装 | Resintalls 包使用其当前安装的版本。 请参阅[重新安装和更新包](../consume-packages/reinstalling-and-updating-packages.md)。 |
+| 重新安装 | Reinstalls 包使用其当前安装的版本。 请参阅[重新安装和更新包](../consume-packages/reinstalling-and-updating-packages.md)。 |
 | FileConflictAction | 当要求您覆盖或忽略现有的项目所引用的文件时要执行的操作。 可能的值为*覆盖、 忽略、 None、 OverwriteAll*，并*IgnoreAll* （3.0 +）。 |
 | DependencyVersion | 版本的依赖项包使用，可以是以下值之一：<br/><ul><li>*最低*（默认值）： 最低版本</li><li>*HighestPatch*： 具有最低主要、 次要最低、 最高的修补程序版本</li><li>*HighestMinor*： 具有最低主要版本、 最小的、 最高的修补程序</li><li>*最高*（默认值为更新包不带任何参数）： 最高版本</li></ul>您可以设置默认值使用[ `dependencyVersion` ](../reference/nuget-config-file.md#config-section)中设置`Nuget.Config`文件。 |
 | ToHighestPatch | 限制为仅使用相同的次要版本与当前安装的包的版本升级。 |
